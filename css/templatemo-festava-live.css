@@ -12,13 +12,13 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #141d3a;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #ec50073d;
+  --primary-color:                #ff66c4;
+  --secondary-color:              #460947;
+  --section-bg-color:             #d168b7;
+  --custom-btn-bg-color:          #da61bbd0;
   --custom-btn-bg-hover-color:    #c01f27;
   --dark-color:                   #000000;
-  --p-color:                      #717275;
+  --p-color:                      #f0f0f0;
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
@@ -54,7 +54,6 @@ body {
 -----------------------------------------*/
 
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -80,6 +79,7 @@ h2 {
 
 h3 {
   font-size: var(--h3-font-size);
+  color: var(--white-color);
 }
 
 h4 {
@@ -218,7 +218,7 @@ strong {
 }
 
 .section-bg {
-  background-color: var(--section-bg-color);
+  background: linear-gradient(to right, #360033, #0b8793);
 }
 
 .section-overlay {
@@ -271,7 +271,8 @@ strong {
 
 .nav-tabs h5 {
   color: var(--p-color); 
-  margin-bottom: 0;
+  margin-bottom: 20px;
+
 }
 
 .nav-tabs .nav-link.active h5,
@@ -280,6 +281,19 @@ strong {
   color: var(--primary-color);
 }
 
+.navbar{
+  margin-bottom: 20px;
+}
+
+
+/*---------------------------------------
+  LOGO           
+-----------------------------------------*/
+.title-logo{
+  width: 100%;
+  height: 130px;
+  padding: 2px;
+}
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -564,7 +578,7 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 130px;
+  padding-top: 150px;
 }
 
 .ticket-form {
@@ -602,6 +616,7 @@ strong {
 }
 
 .artists-image {
+  filter: blur(10px);
   border-radius: var(--border-radius-medium);
   display: block;
   width: 100%;
@@ -614,7 +629,7 @@ strong {
 
 .artists-hover {
   background-color: var(--primary-color);
-  background-color: rgba(248, 203, 46, 0.75);
+  background-color: #d168b7;;
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
@@ -734,7 +749,7 @@ strong {
   PRICING              
 -----------------------------------------*/
 .pricing-thumb {
-  border: 5px dotted var(--dark-color);
+  border: 5px dotted var(--white-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
@@ -749,16 +764,18 @@ strong {
 .pricing-list {
   column-count: 2;
   padding-left: 20px;
+  font-weight: 500;
 }
 
 .pricing-list-item {
   line-height: normal;
   margin-right: 10px;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .pricing-tag {
-  background-color: var(--secondary-color);
+  background-color: #d168b7;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
@@ -773,7 +790,30 @@ strong {
   top: 0;
   right: 0;
   margin: 20px;
+  transition: 1s ease-in-out;
 }
+
+.pricing-title{
+  color: transparent;
+  -webkit-text-stroke: 3px #eb0091;
+  position: relative;
+}
+
+/* .pricing-title::before{
+  content: "HOVER";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: darkmagenta;
+  border-right: 8px solid darkmagenta;
+  transition: 0.5s ease-in-out; */
+}
+
+/* .pricing-title:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px darkmagenta);
+} */
 
 .pricing-tag span {
   font-size: 180%;
@@ -781,11 +821,12 @@ strong {
 }
 
 .pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
+  color: rgb(252, 250, 250);
+  font-weight: 900;
 }
 
 .pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
+  color: rgb(255, 2, 2);
 }
 
 

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Atrangee Fusion</title>
+    <title>Atrangee Fusion | Ticket</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,29 +108,31 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-10 mx-auto">
-                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                        <form class="custom-form ticket-form mb-5 mb-lg-0"
+                            action="https://sheetdb.io/api/v1/irtv9aaemhfsb" method="post" role="form"
+                            id="contact-form">
                             <h2 class="text-center mb-4">Get started here</h2>
-                            <p class="ticket-note"><strong>Note:</strong> Online ticket booking will start from
-                                7<sup>th</sup> December 2024.</p>
+                            <p class="ticket-note"><strong>Note:</strong> Hurry up! Christmas Special offers available till
+                                29<sup>th</sup> December 2024.</p>
 
                             <div class="ticket-form-body">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="ticket-form-name" id="ticket-form-name"
+                                        <input type="text" name="data[ticket-form-name]" id="ticket-form-name"
                                             class="form-control" placeholder="Full name" required>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="email" name="ticket-form-email" id="ticket-form-email"
+                                        <input type="email" name="data[ticket-form-email]" id="ticket-form-email"
                                             pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
                                             required>
                                     </div>
                                 </div>
 
-                                <input type="tel" class="form-control" name="ticket-form-phone"
+                                <input type="tel" class="form-control" name="data[ticket-form-phone]"
                                     placeholder="Ph +91-9XXXXXXXXX" pattern="[0-9]{4}[0-9]{6}" required="">
 
-                                <h6>Choose Ticket Type</h6>
+                                <h6>Ticket Type</h6>
 
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
@@ -138,7 +140,7 @@
                                             <input class="form-check-input" type="radio" name="TicketForm"
                                                 id="flexRadioDefault1">
                                             <label class="form-check-label early-label" for="flexRadioDefault1">
-                                                Eary bird &#8377 799.00
+                                                Eary bird &#8377 849.00
                                             </label>
                                         </div>
                                     </div>
@@ -148,25 +150,52 @@
                                             <input class="form-check-input" type="radio" name="TicketForm"
                                                 id="flexRadioDefault2">
                                             <label class="form-check-label" for="flexRadioDefault2">
-                                                VIP &#8377 1299.00
+                                                Couple &#8377 1599.00
                                             </label>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault3">                                                                 
+                                                    
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Group(5 people) &#8377 3879.00
+                                            </label>
+                                        </div>
+                                    </div>
 
-                                <input type="number" name="ticket-form-number" id="ticket-form-number"
-                                    class="form-control" placeholder="Number of Tickets" required>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Group(10 people) &#8377 7499.00
+                                            </label>
+                                        </div>
+                                    </div>
 
-                                <textarea name="ticket-form-message" rows="3" class="form-control"
-                                    id="ticket-form-message" placeholder="Additional Request"></textarea>
 
-                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                    <button type="submit" class="form-control">Buy Ticket</button>
                                 </div>
                             </div>
-                        </form>
+
+
+
+                            <input type="number" name="data[ticket-form-number]" id="ticket-form-number"
+                                class="form-control" placeholder="Number of Tickets" required>
+
+                            <textarea name="data[ticket-form-message]" rows="3" class="form-control"
+                                id="ticket-form-message" placeholder="Additional Request"></textarea>
+
+                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                <button type="submit" class="form-control">Buy Ticket</button>
+                            </div>
                     </div>
+                    </form>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -195,7 +224,7 @@
                                     <a href="#" class="social-icon-link">
                                         <span class="bi-apple"></span>
                                     </a>
-                                </li> -->
+                                </li>  -->
 
                             <li class="social-icon-item">
                                 <a href="https://www.instagram.com/atrangee_fusion" class="social-icon-link"
@@ -215,7 +244,7 @@
                                     <a href="#" class="social-icon-link">
                                         <span class="bi-pinterest"></span>
                                     </a>
-                                </li> -->
+                                </li>  -->
                         </ul>
                     </div>
                 </div>
@@ -241,9 +270,9 @@
                             <a href="#" class="site-footer-link">Artists</a>
                         </li>
 
-                        <!-- <li class="site-footer-link-item">
+                        <li class="site-footer-link-item">
                             <a href="#" class="site-footer-link">Schedule</a>
-                        </li> -->
+                        </li> 
 
                         <li class="site-footer-link-item">
                             <a href="#" class="site-footer-link">Pricing</a>
@@ -305,7 +334,8 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright &copy; 2036 Festava Live Company</p>
+                        <p class="copyright-text comp-title">Copyright © 2025 <a
+                                href="http://">Thrice<span>Media</span></a></p>
                     </div>
 
                     <div class="col-lg-8 col-12 mt-lg-5">
@@ -334,6 +364,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/google_sheet.js "></script>
 
 </body>
 

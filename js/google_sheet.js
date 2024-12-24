@@ -1,14 +1,30 @@
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzwLVzSb_WupqX4hfMaqtN4HoYNlzp8qI2siF9Pq1Zeev1eeieEUTcPZYrzCauEe3zz/exec";
+// const form = document.getElementById("contact-form");
 
-const form = document.forms["contact-form"];
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   fetch(form.action, {
+//     mode: "no-cors",
+//     method: "POST",
+//     body: new FormData(document.getElementById("contact-form")),
+//   })
+//     .then(() => alert("Thank you"))
+//     .then(() => {
+//       window.location.reload();
+//     })
+//     .catch((error) => console.error("Error!", error.message));
+// });
+
+const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => alert("Thank you"))
+  e.preventDefault();
+  fetch(form.action, {
+    mode: "no-cors",
+    method: "POST",
+    body: new FormData(form),
+  })
     .then(() => {
-      window.location.reload();
+      window.location.href = "thankyou.html"; // Redirect to thankyou.html
     })
     .catch((error) => console.error("Error!", error.message));
 });
